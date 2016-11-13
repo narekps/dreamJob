@@ -29,8 +29,8 @@ class Bootstrap extends Menu
 
         $dom = new \DOMDocument('1.0', 'UTF-8');
         $dom->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8'));
-        $xpath = new \DOMXPath($dom);
-        $query = "//a";
+        $xpath   = new \DOMXPath($dom);
+        $query   = "//a";
         $entries = $xpath->query($query);
         /** @var \DOMElement $entry */
         foreach ($entries as $entry) {

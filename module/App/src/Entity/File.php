@@ -59,7 +59,7 @@ class File
     public function __construct()
     {
         $this->uploadedDate = new \DateTime();
-        $this->sizes = new ArrayCollection();
+        $this->sizes        = new ArrayCollection();
     }
 
     /**

@@ -235,13 +235,13 @@ class GoogleMaps
      */
     private function geocodeQueryString()
     {
-        $queryString = [];
-        $address = $this->getAddress();
-        $queryString['address'] = $address;
-        $queryString['region'] = $this->getRegion();
+        $queryString             = [];
+        $address                 = $this->getAddress();
+        $queryString['address']  = $address;
+        $queryString['region']   = $this->getRegion();
         $queryString['language'] = $this->getLanguage();
-        $queryString = array_filter($queryString);
-        $queryString['key'] = $this->getApiKey();
+        $queryString             = array_filter($queryString);
+        $queryString['key']      = $this->getApiKey();
 
         return http_build_query($queryString);
     }
@@ -259,7 +259,7 @@ class GoogleMaps
             $scheme = "http";
         }
         $pathQueryString = self::URL_PATH . $this->getFormat() . "?" . $this->geocodeQueryString();
-        $url = $scheme . "://" . self::URL_DOMAIN . $pathQueryString;
+        $url             = $scheme . "://" . self::URL_DOMAIN . $pathQueryString;
 
         return $url;
     }
@@ -276,7 +276,7 @@ class GoogleMaps
         if (!is_null($address)) {
             $this->setAddress($address);
         }
-        $url = $this->geocodeUrl($https);
+        $url      = $this->geocodeUrl($https);
         $response = file_get_contents($url);
         if ($raw) {
             return $response;
@@ -295,11 +295,11 @@ class GoogleMaps
      */
     private function reverseGeocodeQueryString()
     {
-        $queryString = [];
+        $queryString             = [];
         $queryString['place_id'] = $this->getPlaceId();
         $queryString['language'] = $this->getLanguage();
-        $queryString = array_filter($queryString);
-        $queryString['key'] = $this->getApiKey();
+        $queryString             = array_filter($queryString);
+        $queryString['key']      = $this->getApiKey();
 
         return http_build_query($queryString);
     }
@@ -317,7 +317,7 @@ class GoogleMaps
             $scheme = "http";
         }
         $pathQueryString = self::URL_PATH . $this->getFormat() . "?" . $this->reverseGeocodeQueryString();
-        $url = $scheme . "://" . self::URL_DOMAIN . $pathQueryString;
+        $url             = $scheme . "://" . self::URL_DOMAIN . $pathQueryString;
 
         return $url;
     }
@@ -334,7 +334,7 @@ class GoogleMaps
         if (!is_null($placeId)) {
             $this->setPlaceId($placeId);
         }
-        $url = $this->reverseGeocodeUrl($https);
+        $url      = $this->reverseGeocodeUrl($https);
         $response = file_get_contents($url);
         if ($raw) {
             return $response;

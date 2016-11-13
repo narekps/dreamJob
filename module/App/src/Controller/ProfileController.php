@@ -17,14 +17,15 @@ use App\Entity\FileSize as FileSizeEntity;
 class ProfileController extends BaseController
 {
 
-    const SECTION_MAIN = 'main';
+    const SECTION_MAIN     = 'main';
     const SECTION_CONTACTS = 'contacts';
-    const SECTION_DEFAULT = self::SECTION_MAIN;
+    const SECTION_DEFAULT  = self::SECTION_MAIN;
     const SECTIONS_ALLOWED = [self::SECTION_DEFAULT, self::SECTION_CONTACTS];
-    const SECTION_NAMES = [
-        self::SECTION_MAIN     => 'Basic info',
-        self::SECTION_CONTACTS => 'Contact info',
-    ];
+    const SECTION_NAMES
+                           = [
+            self::SECTION_MAIN     => 'Basic info',
+            self::SECTION_CONTACTS => 'Contact info',
+        ];
 
     /**
      * Главная страница профиля
@@ -65,11 +66,11 @@ class ProfileController extends BaseController
         switch ($section) {
             case self::SECTION_CONTACTS:
                 return $this->editContactsSection();
-                break;
+            break;
             case self::SECTION_MAIN:
             default:
                 return $this->editMainSection();
-                break;
+            break;
         }
     }
 
@@ -88,7 +89,7 @@ class ProfileController extends BaseController
             // @TODO Сделать кеширование
             /** @var GoogleMaps $googleMap */
             $googleMap = $this->getEvent()->getApplication()->getServiceManager()->get('GoogleMaps');
-            $geoRes = $googleMap->reverseGeocode($user->getAddress());
+            $geoRes    = $googleMap->reverseGeocode($user->getAddress());
             $form->get('addressRaw')->setValue($geoRes['results'][0]['formatted_address']);
         }
 
@@ -106,7 +107,7 @@ class ProfileController extends BaseController
             return $view;
         }
         //request is post
-        $form = $this->buildEntityForm(UserEntity::class, $prg);
+        $form       = $this->buildEntityForm(UserEntity::class, $prg);
         $saveResult = new SaveResult($form->isValid());
         if ($form->isValid()) {
             $data = $form->getData();
@@ -136,7 +137,7 @@ class ProfileController extends BaseController
     protected function editContactsSection()
     {
         /** @var UserEntity $user */
-        $user = $this->getEntityManager()->find(UserEntity::class, $this->zfbAuthentication()->getIdentity()->getId());
+        $user    = $this->getEntityManager()->find(UserEntity::class, $this->zfbAuthentication()->getIdentity()->getId());
         $contact = $user->getContact();
         if (is_null($contact)) {
             $contact = new UserContactEntity();
@@ -159,7 +160,7 @@ class ProfileController extends BaseController
             return $view;
         }
         //request is post
-        $form = $this->buildEntityForm(UserContactEntity::class, $prg);
+        $form       = $this->buildEntityForm(UserContactEntity::class, $prg);
         $saveResult = new SaveResult($form->isValid());
         if ($form->isValid()) {
             $data = $form->getData();
@@ -188,7 +189,7 @@ class ProfileController extends BaseController
      */
     public function saveAvatarAction()
     {
-        $json = new JsonModel(['success' => false]);
+        $json       = new JsonModel(['success' => false]);
         $avatarData = json_decode($this->params()->fromPost('avatar_data'), true);
 
         /** @var \BsbFlysystem\Service\FilesystemManager $fsm */
@@ -198,9 +199,9 @@ class ProfileController extends BaseController
         $em = $this->getEntityManager();
 
         /** @var UserEntity $user */
-        $user = $this->zfbAuthentication()->getIdentity();
-        $folder = 'avatar' . DIRECTORY_SEPARATOR;
-        $name = 'avatar_' . $user->getId();
+        $user     = $this->zfbAuthentication()->getIdentity();
+        $folder   = 'avatar' . DIRECTORY_SEPARATOR;
+        $name     = 'avatar_' . $user->getId();
         $location = $folder . DIRECTORY_SEPARATOR . $name;
 
         try {
@@ -224,20 +225,20 @@ class ProfileController extends BaseController
                 'use_upload_extension' => true,
                 'filesystem'           => $fs
             ]);
-            $file = $filter->filter($_FILES['avatar_file']);
+            $file   = $filter->filter($_FILES['avatar_file']);
 
             $avatar->setFolder($folder)->setName(pathinfo($file['tmp_name'])['basename']);
             $user->setAvatar($avatar);
             $em->persist($avatar);
 
-            $fullPath = $fs->getAdapter()->applyPathPrefix($file['tmp_name']);
+            $fullPath  = $fs->getAdapter()->applyPathPrefix($file['tmp_name']);
             $extension = pathinfo($fullPath)['extension'];
-            $imagine = new \Imagine\Imagick\Imagine();
+            $imagine   = new \Imagine\Imagick\Imagine();
 
             foreach (UserEntity::AVATAR_SIZES as $sizeKey => $size) {
                 $sizeName = $name . "_{$size['w']}x{$size['h']}." . $extension;
                 $sizePath = $fs->getAdapter()->applyPathPrefix($folder . $sizeName);
-                $img = $imagine->open($fullPath);
+                $img      = $imagine->open($fullPath);
                 $img->crop(new Point($avatarData['x'], $avatarData['y']), new Box($avatarData['width'], $avatarData['height']));
                 $img->resize(new Box($size['w'], $size['h']));
                 $img->save($sizePath);

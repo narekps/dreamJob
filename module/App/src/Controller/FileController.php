@@ -25,8 +25,8 @@ class FileController extends BaseController
         }
 
         $default = trim($this->params()->fromQuery('default', ''));
-        $size = trim($this->params()->fromQuery('size', null));
-        $id = intval($this->params()->fromRoute('id'));
+        $size    = trim($this->params()->fromQuery('size', null));
+        $id      = intval($this->params()->fromRoute('id'));
         if (!$id && !$default) {
             $response->setStatusCode(404);
 
@@ -79,11 +79,11 @@ class FileController extends BaseController
         header('Content-Type: ' . $fs->getMimetype($path));
 
         $range = 0;
-        $size = $fs->getSize($path);
+        $size  = $fs->getSize($path);
         if (isset($_SERVER['HTTP_RANGE'])) {
             list($a, $range) = explode("=", $_SERVER['HTTP_RANGE']);
             str_replace($range, "-", $range);
-            $size2 = $size - 1;
+            $size2      = $size - 1;
             $new_length = $size - $range;
             header("HTTP/1.1 206 Partial Content");
             header("Content-Length: {$new_length}");

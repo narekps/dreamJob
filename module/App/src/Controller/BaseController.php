@@ -48,7 +48,7 @@ class BaseController extends AbstractActionController
     public function buildEntityForm($entityName, array $prg = null, $entity = null)
     {
         $builder = new AnnotationBuilder($this->getEntityManager());
-        $form = $builder->createForm($entityName);
+        $form    = $builder->createForm($entityName);
         $form->setAttribute('class', $form->getAttribute('class') . ' ' . 'form-horizontal');
 
         $form->add([

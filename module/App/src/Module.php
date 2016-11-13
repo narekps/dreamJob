@@ -22,7 +22,7 @@ class Module
         AbstractValidator::setDefaultTranslator($e->getApplication()->getServiceManager()->get('MvcTranslator'));
 
         $application = $e->getApplication();
-        $sm = $application->getServiceManager();
+        $sm          = $application->getServiceManager();
 
         $this->initNavigationHelpers($sm);
     }

@@ -38,11 +38,11 @@ final class DefaultRepositoryFactory implements RepositoryFactory
     {
         $repositoryHash = $entityManager->getClassMetadata($entityName)->getName() . spl_object_hash($entityManager);
 
-        if (isset($this->repositoryList[ $repositoryHash ])) {
-            return $this->repositoryList[ $repositoryHash ];
+        if (isset($this->repositoryList[$repositoryHash])) {
+            return $this->repositoryList[$repositoryHash];
         }
 
-        return $this->repositoryList[ $repositoryHash ] = $this->createRepository($entityManager, $entityName);
+        return $this->repositoryList[$repositoryHash] = $this->createRepository($entityManager, $entityName);
     }
 
     /**
@@ -56,7 +56,7 @@ final class DefaultRepositoryFactory implements RepositoryFactory
     private function createRepository(EntityManagerInterface $entityManager, $entityName)
     {
         /* @var $metadata \Doctrine\ORM\Mapping\ClassMetadata */
-        $metadata = $entityManager->getClassMetadata($entityName);
+        $metadata            = $entityManager->getClassMetadata($entityName);
         $repositoryClassName = $metadata->customRepositoryClassName
             ?: $entityManager->getConfiguration()->getDefaultRepositoryClassName();
 

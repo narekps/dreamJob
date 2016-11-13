@@ -22,8 +22,8 @@ class FileRepository extends BaseEntityRepository
      */
     public function getArrayCopy($entity)
     {
-        $arr = [];
-        $arr['id'] = (int)$entity->getId();
+        $arr         = [];
+        $arr['id']   = (int)$entity->getId();
         $arr['name'] = $entity->getName();
 
         return $arr;

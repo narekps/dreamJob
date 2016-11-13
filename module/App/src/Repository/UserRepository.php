@@ -53,13 +53,13 @@ class UserRepository extends BaseEntityRepository
      */
     public function getArrayCopy($entity)
     {
-        $arr = [];
-        $arr['id'] = (int)$entity->getId();
-        $arr['name'] = $entity->getDisplayName();
-        $arr['password'] = '';
-        $arr['email'] = $entity->getIdentity();
+        $arr                = [];
+        $arr['id']          = (int)$entity->getId();
+        $arr['name']        = $entity->getDisplayName();
+        $arr['password']    = '';
+        $arr['email']       = $entity->getIdentity();
         $arr['displayName'] = $entity->getDisplayName();
-        $arr['name'] = $entity->getDisplayName();
+        $arr['name']        = $entity->getDisplayName();
 
         return $arr;
     }

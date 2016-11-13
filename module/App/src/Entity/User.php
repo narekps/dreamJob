@@ -17,15 +17,16 @@ use Zend\Hydrator\ExtractionInterface;
 class User implements UserInterface, IdentityInterface
 {
 
-    const GENDER_EMPTY = 0;
-    const GENDER_MALE = 1; // Мужской
+    const GENDER_EMPTY  = 0;
+    const GENDER_MALE   = 1; // Мужской
     const GENDER_FEMALE = 2; // Женский
 
-    const AVATAR_SIZES = [
-        'large' => ['w' => 230, 'h' => 230],
-        'big'   => ['w' => 120, 'h' => 120],
-        'small' => ['w' => 60, 'h' => 60],
-    ];
+    const AVATAR_SIZES
+        = [
+            'large' => ['w' => 230, 'h' => 230],
+            'big'   => ['w' => 120, 'h' => 120],
+            'small' => ['w' => 60, 'h' => 60],
+        ];
 
     /**
      * @var int

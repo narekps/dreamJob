@@ -10,15 +10,15 @@ use Zend\View\Helper\AbstractHelper;
 class MaterialForm extends AbstractHelper
 {
 
-    const FORM_GROUP_CLASS = 'form-group';
-    const LABEL_CLASS = 'control-label';
+    const FORM_GROUP_CLASS     = 'form-group';
+    const LABEL_CLASS          = 'control-label';
     const LABEL_FLOATING_CLASS = 'label-floating';
-    const INPUT_CLASS = 'form-control';
-    const HELP_BLOCK_CLASS = 'help-block';
+    const INPUT_CLASS          = 'form-control';
+    const HELP_BLOCK_CLASS     = 'help-block';
 
-    const BUTTON_CLASS = 'btn';
-    const BUTTON_BLOCK_CLASS = 'btn-block';
-    const BUTTON_RAISED_CLASS = 'btn-raised';
+    const BUTTON_CLASS         = 'btn';
+    const BUTTON_BLOCK_CLASS   = 'btn-block';
+    const BUTTON_RAISED_CLASS  = 'btn-raised';
     const BUTTON_PRIMARY_CLASS = 'btn-primary';
 
     //const SUBMIT_BUTTON_CLASS = self::BUTTON_CLASS . ' ' . self::BUTTON_BLOCK_CLASS . ' ' . self::BUTTON_RAISED_CLASS . ' ' . self::BUTTON_PRIMARY_CLASS;
@@ -26,11 +26,12 @@ class MaterialForm extends AbstractHelper
 
     const HAS_ERROR_CLASS = 'has-error';
 
-    const NOT_LABEL_ELEMENTS = [
-        Element\Button::class,
-        Element\Submit::class,
-        Element\Csrf::class,
-    ];
+    const NOT_LABEL_ELEMENTS
+        = [
+            Element\Button::class,
+            Element\Submit::class,
+            Element\Csrf::class,
+        ];
 
     /**
      * @var bool
@@ -183,11 +184,11 @@ class MaterialForm extends AbstractHelper
             $element->setLabel($this->view->translate($element->getLabel()));
         }
 
-        $hasError = false;
+        $hasError   = false;
         $groupClass = [self::FORM_GROUP_CLASS];
         if (!empty($element->getMessages())) {
             $groupClass[] = self::HAS_ERROR_CLASS;
-            $hasError = true;
+            $hasError     = true;
         }
         if ((bool)$element->getOption('label_floating') === true) {
             $groupClass[] = self::LABEL_FLOATING_CLASS;
@@ -220,9 +221,9 @@ class MaterialForm extends AbstractHelper
 
         $afterBtnOut = '';
         if ($element->getOption('after_button')) {
-            $afterBtn = $element->getOption('after_button');
+            $afterBtn      = $element->getOption('after_button');
             $afterBtnClass = '';
-            $afterBtnText = $this->getView()->translate('Button');
+            $afterBtnText  = $this->getView()->translate('Button');
             $afterBtnAttrs = '';
             if (isset($afterBtn['class'])) {
                 $afterBtnClass = $afterBtn['class'];
@@ -245,7 +246,7 @@ class MaterialForm extends AbstractHelper
             case Element\Button::class:
                 $element->setAttribute('class', $element->getAttribute('class') . ' ' . self::SUBMIT_BUTTON_CLASS);
                 $output .= $this->getView()->formElement($element);
-                break;
+            break;
             case Element\Radio::class:
                 $output .= '<div class="radio radio-primary">';
                 unset($labelAttributes['class']);
@@ -255,7 +256,7 @@ class MaterialForm extends AbstractHelper
                 }
                 $output .= $this->getView()->formElement($element);
                 $output .= '</div>';
-                break;
+            break;
             default:
                 $element->setAttribute('class', $element->getAttribute('class') . ' ' . self::INPUT_CLASS);
                 $output .= $this->getView()->formElement($element);
@@ -263,7 +264,7 @@ class MaterialForm extends AbstractHelper
                 if ($element->getOption('helpText')) {
                     $output .= '<p class="' . self::HELP_BLOCK_CLASS . '">' . $this->view->translate($element->getOption('helpText')) . '</p>';
                 }
-                break;
+            break;
         }
 
         $output .= $afterBtnOut;
