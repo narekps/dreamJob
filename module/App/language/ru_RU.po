@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+msgid "or"
+msgstr "или"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Sex"
+msgstr "Пол"
+
+msgid "Male"
+msgstr "Мужской"
+
+msgid "Female"
+msgstr "Женский"
+
+msgid "Birthday"
+msgstr "День рождения"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "Mobile"
+msgstr "Мобильный телефон"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Skype"
+msgstr "Skype"
+
+msgid "Website"
+msgstr "Личный сайт"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Changes saved."
+msgstr "Изменения сохранены."
+
+msgid "Your profile has been successfully updated."
+msgstr "Новые данные будут отражены на Вашей странице."
+
+msgid "Failed to save the changes."
+msgstr "Не удалось сохранить изменения."
+
+msgid "Check the correctness of the data entered."
+msgstr "Проверьте корректность введенных данных."
+
+msgid "Enter your real name"
+msgstr "Введите свое настоящее имя"
+
+msgid "Basic info"
+msgstr "Основное"
+
+msgid "Contact info"
+msgstr "Контакты"
+
+msgid "Choose a file"
+msgstr "Выбрать файл"

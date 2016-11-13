@@ -1,0 +1,79 @@
+<?php $this->headLink()->appendStylesheet('/css/login.css'); ?>
+<?php
+
+/**
+ * @var \Zend\Form\Form|null $form - Форма регистрации или NULL если отключена регистрация
+ * @var boolean $enableRegistration - регистрация включена?
+ */
+
+if (!$enableRegistration) {
+  echo "<p>Регистрация запрещена.</p>";
+  return;
+}
+
+$form = $this->form;
+$form->setAttribute('action', $this->url('zfbuser/registration'));
+$form->setAttribute('method', 'POST');
+$form->setAttribute('autocomplete', 'off');
+$form->setAttribute('class', $form->getAttribute('class') . ' login_form centered');
+if ($form->hasValidated() && !$form->isValid()) {
+  $form->setAttribute('class', $form->getAttribute('class') . ' has-error');
+}
+
+foreach($form->getElements() as $element) {
+  $element->setOption('label_floating', true);
+}
+$form->get('name')->setOption('helpText', 'Введите своё настоящее имя');
+?>
+
+<div class="login_box">
+  <h2 style="text-align: center;">Быстрая регистрация</h2>
+  <hr class="colorgraph">
+
+  <?php if (isset($authResult) && !$authResult->isValid()): ?>
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <?php foreach($authResult->getMessages() as $message): ?>
+        <?=$this->translate($message); ?>
+      <?php endforeach; ?>
+    </div>
+  <?php else: ?>
+    <?php if ($form->hasValidated() && !$form->isValid()): ?>
+      <div class="alert alert-danger alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <?=$this->translate('There were errors during registration'); ?>
+      </div>
+    <?php endif; ?>
+  <?php endif; ?>
+
+  <?php
+  /** @var \App\View\Helper\MaterialForm $materialForm */
+  $materialForm = $this->materialForm();
+  $materialForm->setElementAsCol(false)->setLabelAfterText('')->render($form);
+  ?>
+
+  <div class="or_box">
+    <hr class="line" />
+    <span class="text"><?=$this->translate('or');?></span>
+  </div>
+  <div style="width: 100%; text-align: center;">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-vk-outline">
+        <span>
+          <i class="fa fa-vk" aria-hidden="true"></i>
+          Вконтакте
+        </span>
+      </button>
+      <button type="button" class="btn  btn-fb-outline">
+        <span>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          Facebook
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

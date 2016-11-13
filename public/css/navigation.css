@@ -1,0 +1,32 @@
+.navbar .navbar-brand {
+  padding-top: 1em;
+}
+.navbar .navbar-brand img {
+  width: auto;
+  height: 25px;
+}
+.navbar ul li a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#userBtn {
+  position: relative;
+  display: inline-block;
+  padding-top: .5em !important;
+  padding-bottom: 0;
+}
+#userBtn img {
+  width: 45px;
+}
+@media (max-width: 1200px) {
+  .navbar .navbar-brand {
+    padding-top: .5em;
+  }
+  .navbar .navbar-brand img {
+    height: 30px;
+  }
+  #userBtn img {
+    width: 35px;
+  }
+}

@@ -1,0 +1,89 @@
+{
+    "name": "narekps/dreamJob",
+    "description": "Dream job",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "zf3"
+    ],
+    "homepage": "https://github.com/narekps/dreamJob",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-component-installer": "^1.0 || ^0.3 || ^1.0.0-dev@dev",
+        "zendframework/zend-mvc": "^3.0.1",
+        "zfcampus/zf-development-mode": "^3.0",
+        "zendframework/zend-cache": "^2.7.1",
+        "zendframework/zend-db": "^2.8.1",
+        "zendframework/zend-mvc-form": "^1.0",
+        "zendframework/zend-json": "^3.0",
+        "zendframework/zend-log": "^2.9",
+        "zendframework/zend-mvc-console": "^1.1.10",
+        "zendframework/zend-mvc-i18n": "^1.0",
+        "zendframework/zend-mvc-plugins": "^1.0.1",
+        "zendframework/zend-psr7bridge": "^0.2.2",
+        "zendframework/zend-session": "^2.7",
+        "zendframework/zend-servicemanager-di": "^1.0",
+        "zendframework/zend-crypt": "^3.1",
+        "zendframework/zend-navigation": "^2.8",
+        "zendframework/zend-i18n": "^2.7",
+        "zendframework/zend-form": "^2.9",
+        "zendframework/zend-http": "^2.5",
+        "zendframework/zend-permissions-rbac": "^2.5",
+		
+		"gedmo/doctrine-extensions": "^2.4",
+		"bushbaby/flysystem": "^2.0",
+		"imagine/imagine": "^0.6.3",
+		
+		"narekps/zfb-user": "dev-master",
+		"narekps/zfb-user-doctrine-orm": "dev-master",
+		"narekps/zfb-rbac": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "module/App/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AppTest\\": "module/App/test/"
+        }
+    },
+    "extra": [],
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
+        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+        "test": "phpunit"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "^1.1.0",
+        "zendframework/zend-test": "^3.0",
+		"san/san-session-toolbar": "^1.0"
+    },
+	"repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/narekps/ZfbUser.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/narekps/ZfbUserDoctrineOrm.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/narekps/Rbac.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/narekps/ZfbRbac.git"
+    }
+  ]
+}

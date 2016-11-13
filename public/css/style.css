@@ -1,0 +1,178 @@
+html, body {
+  height: 100%;
+}
+
+body > .container {
+  padding-top: 80px; /* nav height + 20px */
+}
+@media (max-width: 768px) {
+  body > .container {
+    padding-top: 70px; /* nav height + 20px */
+  }
+}
+
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+  background-image: -moz-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+  background-image: -o-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+  background-image: linear-gradient(to right,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+}
+
+.btn-vk-outline {
+  color: #597DA3 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: #597DA3 !important;
+}
+.btn-vk-outline:hover {
+  color: #fff !important;
+  background-color: #597DA3 !important;
+  border-color: #597DA3 !important;
+}
+
+.btn-fb-outline {
+  color: #3B5998 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: #3B5998 !important;
+}
+.btn-fb-outline:hover {
+  color: #fff !important;
+  background-color: #3B5998 !important;
+  border-color: #3B5998 !important;
+}
+
+
+.panel .panel-heading .panel-title {
+  margin: 5px 0;
+  font-size: 1.4em;
+}
+
+
+.rating-container {
+  display: inline-block;
+}
+.rating-md {
+  font-size: 2em !important;
+}
+.rating-md .caption {
+  height: 40px;
+}
+.rating-md .caption span {
+  line-height: 45px;
+}
+
+
+.circle {
+  position: relative;
+  display: inline-block;
+}
+.circle .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.circle .content img {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  top: 50%;
+  margin-left: calc(-25%);
+  margin-top: calc(-25%);
+}
+
+.circle .popover {
+  width: 450px;
+}
+
+
+.nav-tabs > li.active > a {
+  color: #333 !important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #009688;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+
+html > body {
+  background: #EDEEF0 !important;
+}
+
+.form-group .checkbox label, .form-group .radio label, .form-group label {
+  color: #656565;
+}
+.radio label, label.radio-inline {
+  padding-left: 30px;
+}
+.radio label {
+  margin-left: 30px;
+}
+.radio label:first-child {
+  margin-left: 0;
+}
+.form-group label.control-label {
+  font-size: 16px;
+}
+/*
+.form-group.radio-group label.control-label {
+  margin-top: 3px;
+}*/
+
+.form-horizontal .checkbox, .form-horizontal .checkbox-inline, .form-horizontal .radio, .form-horizontal .radio-inline {
+  margin-top: 12px;
+}
+.nav-pills {
+  padding: 5px 0;
+}
+.nav-pills>li>a {
+  border-radius: 0;
+}
+
+.dropdownjs ul li[value=''] {
+  display: none;
+}
+
+.text-centered {
+  text-align: center;
+}
+.page_block_header {
+  display: block;
+  background: #fafbfc;
+  padding: 0 20px;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #e7e8ec;
+  border-radius: 2px 2px 0 0;
+  font-size: 16px;
+  outline: none;
+  color: #000
+}
+
+
+
+
+
+.edit_result .msg {
+  margin: 15px 15px 20px;
+}
+.box_msg, .msg {
+}
+.edit_result .msg{
+  padding: 7px 18px 9px 55px;
+}
+.ok_msg {
+  background: #eefaee url(../img/icons/msg_ok.png) no-repeat 12px 12px;
+}
+.error_msg {
+  background: #eefaee url(../img/icons/msg_error.png) no-repeat 12px 12px;
+}

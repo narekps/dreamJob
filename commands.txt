@@ -1,0 +1,3 @@
+php "C:\Program Files (x86)\Zend\ZendServer\data\apps\http\task.dev\80\_docroot_\vendor\doctrine\doctrine-module\bin\doctrine-module" orm:clear-cache:metadata
+php "C:\Program Files (x86)\Zend\ZendServer\data\apps\http\task.dev\80\_docroot_\vendor\doctrine\doctrine-module\bin\doctrine-module" orm:generate-proxies
+php "C:\Program Files (x86)\Zend\ZendServer\data\apps\http\task.dev\80\_docroot_\vendor\doctrine\doctrine-module\bin\doctrine-module" orm:schema-tool:update --force

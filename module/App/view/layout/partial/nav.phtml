@@ -1,0 +1,39 @@
+<?php
+/** @var \ZfbUser\Entity\UserInterface $user */
+$user = $this->ZfbUserIdentity();
+?>
+
+<nav id="nav" class="navbar navbar-primary navbar-fixed-top bg-green">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<?php echo $this->url('home') ?>">
+        <img alt="Logo" src="<?php echo $this->basePath('img/logo.png') ?>">
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">
+        <span class="sr-only"><?=$this->translate('Toggle navigation'); ?></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <?=$this->navigation('Zend\Navigation\Default')->bootstrap()->setUlClass('nav navbar-nav')->setAddClassToListItem(true);?>
+      <?php if($user): ?>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a data-toggle="dropdown" data-target="userMenu" id="userBtn" class="nav-link dropdown-toggle" href="#" data-title="Привет, <?=$user->getDisplayName(); ?>!">
+              <img alt="<?=$user->getDisplayName(); ?>" src="<?=$this->userAvatar($user, 'small'); ?>" class="img-circle">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" id="userMenu">
+              <li><a class="dropdown-item" href="<?=$this->url('profile', ['action' => 'index']); ?>"><?=$this->translate('Profile'); ?></a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<?=$this->url('zfbuser/logout'); ?>"><?=$this->translate('Logout'); ?></a></li>
+            </ul>
+          </li>
+        </ul>
+      <?php else: ?>
+        <?=$this->navigation('Zend\Navigation\Guest')->bootstrap()->setUlClass('nav navbar-nav navbar-right')->setAddClassToListItem(true);?>
+      <?php endif; ?>
+    </div>
+  </div>
+</nav>

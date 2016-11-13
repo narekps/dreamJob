@@ -1,0 +1,78 @@
+<?= $this->doctype() ?>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <?= $this->headTitle('ZF Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
+  <?= $this->headMeta()
+      ->appendName('viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no')
+      ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+  ?>
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+      ->appendStylesheet($this->basePath('assets/components/normalize-css/normalize.css'))
+      ->appendStylesheet($this->basePath('assets/components/tether/dist/css/tether.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/bootstrap/dist/css/bootstrap.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/bootstrap-material-design/dist/css/ripples.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/font-awesome/css/font-awesome.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/font-awesome/css/font-awesome.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/bootstrap-star-rating/css/star-rating.min.css'))
+      ->appendStylesheet($this->basePath('assets/components/datetimepicker/build/jquery.datetimepicker.min.css'))
+      ->appendStylesheet($this->basePath('css/style.css'))
+      ->appendStylesheet($this->basePath('css/navigation.css'))
+      ->appendStylesheet($this->basePath('css/loader.css'))
+  ;
+  ?>
+
+  <?= $this->headScript()
+      ->prependFile($this->basePath('js/login.js'))
+      ->prependFile($this->basePath('js/main.js'))
+
+      ->prependFile($this->basePath('js/loader.js'))
+
+      ->prependFile($this->basePath('js/modernizr.custom.js'))
+      ->prependFile($this->basePath('assets/components/classie/classie.js'))
+      ->prependFile($this->basePath('assets/components/datetimepicker/build/jquery.datetimepicker.full.min.js'))
+      ->prependFile($this->basePath('assets/components/jquery-circle-progress/dist/circle-progress.js'))
+      ->prependFile($this->basePath('assets/components/bootstrap-star-rating/js/star-rating_locale_ru.js'))
+      ->prependFile($this->basePath('assets/components/bootstrap-star-rating/js/star-rating.min.js'))
+      ->prependFile($this->basePath('assets/components/bootstrap-material-design/dist/js/material.min.js'))
+      ->prependFile($this->basePath('assets/components/bootstrap-material-design/dist/js/ripples.min.js'))
+      ->prependFile($this->basePath('assets/components/bootstrap/dist/js/bootstrap.min.js'))
+      ->prependFile($this->basePath('assets/components/jquery/dist/jquery.min.js'))
+      ->prependFile($this->basePath('assets/components/tether/dist/js/tether.min.js'))
+  ;
+  ?>
+  <!-- Dropdown.js -->
+  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper" class="container">
+  <?=$this->partial('layout/partial/nav'); ?>
+  <div id="content">
+    <?=$this->content; ?>
+  </div>
+</div>
+
+
+
+<div id="loader" class="loader">
+  <div class="progress progress-striped active" style="height: 100%;">
+    <div class="progress-bar progress-bar" style="width: 100%"></div>
+  </div>
+</div>
+
+<?= $this->inlineScript() ?>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+<script>
+  $("select.select-dropdown").dropdown();
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<?php
+/**
+ * @var \ZfbUser\Entity\UserInterface $user
+ */
+
+$this->headLink()->appendStylesheet($this->basePath('assets/components/cropper/dist/cropper.min.css'));
+$this->headScript()->prependFile($this->basePath('assets/components/cropper/dist/cropper.min.js'));
+
+$this->headLink()->appendStylesheet($this->basePath('css/profile.css'));
+$this->headScript()->prependFile($this->basePath('js/profile.js'));
+?>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <?= $this->partial('zfb-user/index/parts/avatar', [
+            'user' => $user,
+        ]); ?>
+      </div>
+      <div class="panel-body">
+        <h3 class="user-name"><?=$user->getDisplayName(); ?></h3>
+        <p><span class="label label-success">Свободен</span></p>
+        <a href="javascript:void(0)" class="btn btn-raised btn-primary btn-block">Предложить задание</a>
+        <a href="javascript:void(0)" class="btn btn-raised btn-success btn-block">Добавить в избранное</a>
+        <a href="javascript:void(0)" class="btn btn-raised btn-info btn-block">Написать сообщение</a>
+        <a href="<?=$this->url('profile', ['action' => 'edit']); ?>" class="btn btn-raised btn-default btn-block">Редактировать профиль</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>
+          <span><i class="material-icons" style="font-size: 14px; line-height: 14px; color: #BDBDBD;">favorite</i> 23 года</span>
+          &nbsp;&nbsp;&nbsp;
+          <span><i class="material-icons" style="font-size: 14px; line-height: 14px; color: #BDBDBD;">place</i> Москва</span>
+          &nbsp;&nbsp;&nbsp;
+          <span><i class="material-icons" style="font-size: 14px; line-height: 14px; color: #BDBDBD;">subway</i> Чертановская</span>
+        </p>
+        <p class="text-muted" style="position: absolute; top: 10px; right: 30px;">заходил 38 минут назад</p>
+
+        <p>Выполнила 893 задания, создала 1 задание</p>
+        <p>Средняя оценка: 5 (858 отзывов)</p>
+
+        <div class="user-rating" style="margin: 10px 0 20px;">
+          <label for="userRating">Рейтинг</label>
+          <input id="userRating" name="input-2" value="3.6" class="rating-loading" type="number" readonly>
+          <script>
+            $(document).on('ready', function(){
+              setTimeout(function(){
+                $('#userRating').rating({
+                  step: 1,
+                  language: 'ru',
+                  emptyStar: '<i class="material-icons">grade</i>',
+                  filledStar: '<i class="material-icons">grade</i>',
+                  readonly: true,
+                  showClear: false,
+                  showCaption: true,
+                  starCaptions: {1: 'Very Poor', 2: 'Poor', 3: 'Ok', 4: 'Good', 5: 'Very Good'},
+                  starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}
+                });
+              }, 500);
+            });
+          </script>
+          <p>1 место <span class="text-primary">в исполнителях</span>, 15 место <span class="text-primary">в заказчиках</span></p>
+        </div>
+
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="well no-padding panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Исполнитель YouDo</h3>
+      </div>
+      <div class="panel-body">
+        <p class="text-success">Верификация пройдена 6.01.2016 г.</p>
+        <img src="/img/verifications.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Виды выполняемых работ</h3>
+      </div>
+      <div class="panel-body">
+        <div style="display: inline-block;" id="circle1"></div>
+        <div style="display: inline-block;" id="circle2"></div>
+        <div style="display: inline-block;" id="circle3"></div>
+        <div style="display: inline-block;" id="circle4"></div>
+        <div style="display: inline-block;" id="circle5"></div>
+        <div
+            class="circle"
+            data-value="0.9"
+            data-size="180"
+            data-fill="{&quot;color&quot;: &quot;#009688&quot;}"
+        >
+          <div class="content" data-toggle="popover" data-placement="top" data-title="Курьерские услуги" data-content="15 место, выполнено 17 заданий <?=htmlentities('<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>'); ?>">
+            <img src="/img/category.png" alt="">
+          </div>
+        </div>
+        <script>
+          $(function(){
+            setTimeout(function(){
+              $('.circle').circleProgress();
+              $('#circle1').circleProgress({
+                value: 0.2,
+                size: 80,
+                fill: {
+                  color: '#f44336' // danger
+                }
+              });
+              $('#circle2').circleProgress({
+                value: 0.4,
+                size: 80,
+                fill: {
+                  color: '#ff5722' // warning
+                }
+              });
+              $('#circle3').circleProgress({
+                value: 0.6,
+                size: 80,
+                fill: {
+                  color: '#03a9f4' // info
+                }
+              });
+              $('#circle4').circleProgress({
+                value: 0.8,
+                size: 80,
+                fill: {
+                  color: '#009688' // primary
+                }
+              });
+              $('#circle5').circleProgress({
+                value: 0.9,
+                size: 80,
+                fill: {
+                  color: '#4caf50' // success
+                }
+              });
+            }, 1000)
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>

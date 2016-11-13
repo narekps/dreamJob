@@ -1,0 +1,16 @@
+.idea
+.vagrant/
+vendor/
+config/development.config.php
+data/cache/*
+data/uploads/avatar/*
+!data/uploads/avatar/avatar.png
+!data/cache/.gitkeep
+phpunit.xml
+ubuntu-xenial-16.04-cloudimg-console.log
+composer.lock
+
+tests/_output/*
+public/assets/components
+/data/cache/
+/data/DoctrineORMModule/

@@ -1,0 +1,49 @@
+.login_box {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.login_box h2 {
+  margin-top: 10px;
+}
+.login_form {
+  max-width: 350px;
+}
+.login_box .login_form {
+  margin: 0 auto;
+}
+.login_form .popover {
+  max-width: 300px;
+}
+.login_form .popover ul {
+  list-style-type: none;
+  padding: 0;
+}
+.login_form input {
+  padding-left: 10px;
+}
+
+  /* или */
+.or_box {
+  position: relative;
+  font-size: 1.5rem;
+  margin: 1em 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.or_box .line {
+  background-color: #cccccc;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.or_box .text {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.5rem;
+  margin-left: -1.5em;
+  background-color: white;
+  width: 3em;
+  text-align: center;
+  color: #777777;
+}

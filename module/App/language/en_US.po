@@ -1,0 +1,1777 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-05 22:17-0700\n"
+"PO-Revision-Date: 2016-04-06 18:43+0300\n"
+"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/layout.phtml:6 ../view/layout/layout.phtml:33
+msgid "Skeleton Application"
+msgstr ""
+
+#: ../view/layout/layout.phtml:36
+msgid "Home"
+msgstr ""
+
+#: ../view/layout/layout.phtml:50
+msgid "All rights reserved."
+msgstr ""
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to %sZend Framework 2%s"
+msgstr ""
+
+#: ../view/application/index/index.phtml:3
+#, php-format
+msgid "Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2."
+msgstr ""
+
+#: ../view/application/index/index.phtml:4
+msgid "Fork Zend Framework 2 on GitHub"
+msgstr ""
+
+#: ../view/application/index/index.phtml:10
+msgid "Follow Development"
+msgstr ""
+
+#: ../view/application/index/index.phtml:11
+#, php-format
+msgid "Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!"
+msgstr ""
+
+#: ../view/application/index/index.phtml:12
+msgid "ZF2 Development Portal"
+msgstr ""
+
+#: ../view/application/index/index.phtml:16
+msgid "Discover Modules"
+msgstr ""
+
+#: ../view/application/index/index.phtml:17
+#, php-format
+msgid "The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2."
+msgstr ""
+
+#: ../view/application/index/index.phtml:18
+msgid "Explore ZF2 Modules"
+msgstr ""
+
+#: ../view/application/index/index.phtml:22
+msgid "Help &amp; Support"
+msgstr ""
+
+#: ../view/application/index/index.phtml:23
+#, php-format
+msgid "If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s."
+msgstr ""
+
+#: ../view/application/index/index.phtml:24
+msgid "Ping us on IRC"
+msgstr ""
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr ""
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr ""
+
+# ###################
+msgid "События"
+msgstr "Events"
+
+msgid "Фотосъемки"
+msgstr "Shootings"
+
+msgid "Видео"
+msgstr "Videos"
+
+msgid "Места"
+msgstr "Places"
+
+msgid "Пользователи"
+msgstr "Users"
+
+msgid "Редакция"
+msgstr "Articles"
+
+msgid "Регионы"
+msgstr "Regions"
+
+msgid "Перейти на сайт"
+msgstr "Go to the website"
+
+msgid "Войти"
+msgstr "Login"
+
+msgid "Выйти"
+msgstr "Logout"
+
+msgid "Статистика"
+msgstr "Statistics"
+
+msgid "Добавить"
+msgstr "Add"
+
+msgid "название"
+msgstr "title"
+
+msgid "начало"
+msgstr "start date"
+
+msgid "окончание"
+msgstr "end date"
+
+msgid "дата"
+msgstr "date"
+
+msgid "место"
+msgstr "place"
+
+msgid "отфильтровать"
+msgstr "filter"
+
+msgid "дата начала"
+msgstr "start date"
+
+msgid "дата окончания"
+msgstr "end date"
+
+msgid "начните вводить название..."
+msgstr "start typing the title..."
+
+msgid "начните вводить имя..."
+msgstr "start typing the name..."
+
+msgid "К сожалению, по Вашему запросу ничего не было найдено."
+msgstr "Unfortunately, nothing was found on your request."
+
+msgid "Статистика событий"
+msgstr "Events statistics"
+
+msgid "Статистика собирается по отфильтрованному списку."
+msgstr "Statistics are gathered for the filtered list."
+
+msgid "Создано событий"
+msgstr "Events created"
+
+msgid "Опубликовано событий"
+msgstr "Events published"
+
+msgid "Прошедших событий"
+msgstr "Past events"
+
+msgid "Идущих событий"
+msgstr "Present events"
+
+msgid "Будущих событий"
+msgstr "Future events"
+
+msgid "Неопубликованных событий"
+msgstr "Unpublished events"
+
+msgid "Закрыть"
+msgstr "Close"
+
+msgid "Место"
+msgstr "Place"
+
+msgid "Название"
+msgstr "Title"
+
+msgid "Дата начала"
+msgstr "Start date"
+
+msgid "Дата окончания"
+msgstr "End date"
+
+msgid "Описание"
+msgstr "Description"
+
+msgid "Скрытое событие"
+msgstr "Hidden event"
+
+msgid "Отправить"
+msgstr "Send"
+
+msgid "Отмена"
+msgstr "Close"
+
+msgid "Редактировать"
+msgstr "Edit"
+
+msgid "событие"
+msgstr "event"
+
+msgid "фотограф"
+msgstr "photographer"
+
+msgid "дата и время"
+msgstr "date and time"
+
+msgid "Событие"
+msgstr "Event"
+
+msgid "Фотограф"
+msgstr "Photographer"
+
+msgid "Фотографии"
+msgstr "Photos"
+
+msgid "Длительность в часах"
+msgstr "Duration in hours"
+
+msgid "Стоимость"
+msgstr "Cost"
+
+msgid "Компенсация фотографу"
+msgstr "Compensation to the photographer"
+
+msgid "Техническое задание"
+msgstr "Specification"
+
+msgid "Фотографы"
+msgstr "Photographers"
+
+msgid "Причины штрафов"
+msgstr "Fine reasons"
+
+msgid "выберите событие..."
+msgstr "choose event..."
+
+msgid "YouTube Видео URL"
+msgstr "YouTube Video URL"
+
+msgid "Введите ссылку формата http://www.youtube.com/watch?v=PNu_-deVemE"
+msgstr "Enter the link like http://www.youtube.com/watch?v=PNu_-deVemE"
+
+msgid "Список причин штрафов"
+msgstr "List of fine reasons"
+
+msgid "заголовок"
+msgstr "title"
+
+msgid "объем"
+msgstr "value"
+
+msgid "Заголовок"
+msgstr "Title"
+
+msgid "Объем в процентах"
+msgstr "Volume percentage"
+
+msgid "Статистика мест"
+msgstr "Places statistics"
+
+msgid "Создано мест"
+msgstr "Places created"
+
+msgid "Опубликовано мест"
+msgstr "Places published"
+
+msgid "Неопубликованных мест"
+msgstr "Places unpublished"
+
+msgid "редактировать"
+msgstr "edit"
+
+msgid "не опубликовывать"
+msgstr "unpublish"
+
+msgid "опубликовать"
+msgstr "publish"
+
+msgid "имя"
+msgstr "name"
+
+msgid "уровень"
+msgstr "level"
+
+msgid "выберите..."
+msgstr "choose..."
+
+msgid "роль"
+msgstr "role"
+
+msgid "забанить"
+msgstr "ban"
+
+msgid "разбанить"
+msgstr "unban"
+
+msgid "фотосъемки"
+msgstr "shootings"
+
+msgid "Вы действительно хотите забанить пользователя"
+msgstr "Do you really want to ban user"
+
+msgid "Вы действительно хотите разбанить пользователя"
+msgstr "Do you really want to unban user"
+
+msgid "Имя"
+msgstr "Name"
+
+msgid "Роль"
+msgstr "Role"
+
+msgid "Пароль"
+msgstr "Password"
+
+msgid "Сгенерированный пароль следует самостоятельно прислать пользователю любым безопасным способом."
+msgstr "You should independently send generated password to user with any safety way."
+
+msgid "Уровень"
+msgstr "Level"
+
+msgid "все роли"
+msgstr "all roles"
+
+msgid "гость"
+msgstr "guest"
+
+msgid "пользователь"
+msgstr "user"
+
+msgid "администратор"
+msgstr "administrator"
+
+msgid "фоторедактор"
+msgstr "photoeditor"
+
+msgid "супер-администратор"
+msgstr "super-administrator"
+
+msgid "оплачено"
+msgstr "paid"
+
+msgid "мес."
+msgstr "months"
+
+msgid "Проплачено до"
+msgstr "Paid for in advance before"
+
+msgid "отправить отчет"
+msgstr "send report"
+
+msgid "Вы действительно хотите отправить отчет события"
+msgstr "Do you really want to send a report of event"
+
+msgid "Вы действительно хотите снять с публикации событие"
+msgstr "Do you really want to unpublish event"
+
+msgid "Вы действительно хотите опубликовать событие"
+msgstr "Do you really want to publish event"
+
+msgid "в обработке"
+msgstr "dealing"
+
+msgid "штрафы и бонусы"
+msgstr "fines and bonuses"
+
+msgid "Штрафы и бонусы"
+msgstr "Fines and bonuses"
+
+msgid "Штрафы"
+msgstr "Fines"
+
+msgid "Оштрафовать"
+msgstr "Fine"
+
+msgid "Добавить штраф к фотосъемке"
+msgstr "Add fine to shooting"
+
+msgid "выберите причину..."
+msgstr "choose reason..."
+
+msgid "У этой фотосъемки нет штрафов."
+msgstr "There is no fines added to this shooting."
+
+msgid "причина"
+msgstr "reason"
+
+msgid "время"
+msgstr "time"
+
+msgid "действия"
+msgstr "actions"
+
+msgid "подробнее"
+msgstr "more"
+
+msgid "удалить"
+msgstr "remove"
+
+msgid "Вы действительно хотите удалить штраф"
+msgstr "Do you really want to delete fine"
+
+msgid "Бонусы"
+msgstr "Bonuses"
+
+msgid "Система бонусов находится в разработке."
+msgstr "Bonus system is in development."
+
+msgid "завершить"
+msgstr "complete"
+
+msgid "Завершить фотосъемку"
+msgstr "Complete shooting"
+
+msgid "Принято фотографий"
+msgstr "Photos accepted"
+
+msgid "Добавлено фотографий"
+msgstr "Photos added"
+
+msgid "Вы действительно хотите завершить фотосъемку?"
+msgstr "Do you really want to complete shooting?"
+
+msgid "Фотосъемку завершить невозможно."
+msgstr "Impossible to complete shooting."
+
+msgid "возобновить"
+msgstr "renew"
+
+msgid "Вы действительно хотите открыть фотосъемку"
+msgstr "Do you really want to open shooting"
+
+msgid "фотографии"
+msgstr "photos"
+
+msgid "загрузить фотографии"
+msgstr "upload photos"
+
+msgid "Загрузка фотографий"
+msgstr "Upload photos"
+
+msgid "Вы уверены, что загрузили все фотографии?"
+msgstr "Are you sure you have uploaded all the pictures?"
+
+msgid "Ваш браузер не поддерживает HTML 5."
+msgstr "Your browser does not support HTML 5."
+
+msgid "Следующие файлы не были загружены из-за неизвестной ошибки:"
+msgstr "The following files were not uploaded due to an unknown error:"
+
+msgid "Вернуться назад, я загружу остальные фотографии позже"
+msgstr "Go back, I'll upload more photos later"
+
+msgid "Я загрузил все фотографии"
+msgstr "I uploaded all photos"
+
+msgid "Модерация"
+msgstr "Moderation"
+
+msgid "Отклонить"
+msgstr "Decline"
+
+msgid "Accept"
+msgstr "Принять"
+
+msgid "не проверено"
+msgstr "not moderated"
+
+msgid "Фотографии события"
+msgstr "Photos of event"
+
+msgid "Вы не можете управлять фотографиями завершенной фотосъемки."
+msgstr "You can not manage photos of completed shooting."
+
+msgid "Откройте фотосъемку и вы вновь сможете управлять ее фотографиями."
+msgstr "Open shooting again and you will be able to manage her photos."
+
+msgid "перейти на страницу фотосъемки"
+msgstr "go to the shooting page"
+
+msgid "Новые фотографии на модерации"
+msgstr "New photos on moderation"
+
+msgid "Новых фотографий, нуждающихся в модерации"
+msgstr "New photos in need of moderation"
+
+msgid "Запустить модерацию"
+msgstr "Start moderation"
+
+msgid "Мне лень модерировать фотографии, принять все фотографии и будь что будет"
+msgstr "I'm too lazy to moderate photos, accept all photos"
+
+msgid "Вы действительно хотите принять все фотографии, минув их модерацию?"
+msgstr "Do you really want to accept all the photos without moderation?"
+
+msgid "Принятые необработанные фотографии"
+msgstr "Accepted untreated photos"
+
+msgid "Принятых фотографий, успешно прошедших модерацию, но еще не прошедших обработку"
+msgstr "Accepted photos, successfully passed moderation, but still not treated"
+
+msgid "Перемодерировать принятые фотографии"
+msgstr "Moderate accepted photos again"
+
+msgid "Отклоненные фотографии"
+msgstr "Declined photos"
+
+msgid "Отклоненых фотографий, не прошедших модерацию"
+msgstr "Declined photos that have not been moderated"
+
+msgid "Перемодерировать отклоненные фотографии"
+msgstr "Moderate declined photos again"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "Дополнительный телефон"
+msgstr "Additional phone"
+
+msgid "Адрес"
+msgstr "Address"
+
+msgid "Уточнения к адресу"
+msgstr "Address details"
+
+msgid "не указана"
+msgstr "not specified"
+
+msgid "видео"
+msgstr "videos"
+
+msgid "афиша"
+msgstr "posters"
+
+msgid "места"
+msgstr "places"
+
+msgid "редакция"
+msgstr "articles"
+
+msgid "заказать съемку"
+msgstr "order shooting"
+
+msgid "Язык сайта"
+msgstr "Site language"
+
+msgid "Ваш регион"
+msgstr "Your region"
+
+msgid "соглашение"
+msgstr "agreement"
+
+msgid "вакансии"
+msgstr "vacancies"
+
+msgid "реклама"
+msgstr "advertisement"
+
+msgid "партнеры"
+msgstr "partners"
+
+msgid "рекламные материалы"
+msgstr "ad materials"
+
+msgid "поиск"
+msgstr "search"
+
+msgid "начните вводить запрос..."
+msgstr "start typing the query..."
+
+msgid "вся афиша"
+msgstr "all posters"
+
+msgid "все события"
+msgstr "all events"
+
+msgid "светская хроника"
+msgstr "gossip column"
+
+msgid "частная съемка"
+msgstr "private shooting"
+
+msgid "сегодня"
+msgstr "today"
+
+msgid "и ранее"
+msgstr "and before"
+
+msgid "событий"
+msgstr "events"
+
+msgid "фотографий"
+msgstr "photos"
+
+msgid "просмотров"
+msgstr "views"
+
+msgid "по порядку"
+msgstr "order by time"
+
+msgid "по просмотрам"
+msgstr "order by views"
+
+msgid "January D"
+msgstr "January"
+
+msgid "February D"
+msgstr "February"
+
+msgid "March D"
+msgstr "March"
+
+msgid "April D"
+msgstr "April"
+
+msgid "May D"
+msgstr "May"
+
+msgid "June D"
+msgstr "June"
+
+msgid "July D"
+msgstr "July"
+
+msgid "August D"
+msgstr "August"
+
+msgid "September D"
+msgstr "September"
+
+msgid "October D"
+msgstr "October"
+
+msgid "November D"
+msgstr "November"
+
+msgid "December D"
+msgstr "December"
+
+msgid "загрузка..."
+msgstr "loading..."
+
+msgid "август и ранее"
+msgstr "august and before"
+
+msgid "показано"
+msgstr "shown"
+
+msgid "мест упорядоченных по"
+msgstr "places ordered by"
+
+msgid "алфавиту"
+msgstr "alphabet"
+
+msgid "среднему счету"
+msgstr "average bill"
+
+msgid "рейтингу"
+msgstr "rating"
+
+msgid "в порядке"
+msgstr "in"
+
+msgid "возрастания"
+msgstr "ascending order"
+
+msgid "убывания"
+msgstr "descending order"
+
+msgid "по вашему запросу места не найдены"
+msgstr "no places found"
+
+msgid "средний чек"
+msgstr "average bill"
+
+msgid "от"
+msgstr "from"
+
+msgid "до"
+msgstr "to"
+
+msgid "метро"
+msgstr "subway"
+
+msgid "очистить"
+msgstr "clear"
+
+msgid "кухня"
+msgstr "cuisine"
+
+msgid "Показать"
+msgstr "Show"
+
+msgid "Москва"
+msgstr "Moscow"
+
+msgid "Краснодар"
+msgstr "Krasnodar"
+
+msgid "Минск"
+msgstr "Minsk"
+
+msgid "Нижний Новгород"
+msgstr "Nizhny Novgorod"
+
+msgid "Новосибирск"
+msgstr "Novosibirsk"
+
+msgid "Одесса"
+msgstr "Odessa"
+
+msgid "Ростов-на-Дону"
+msgstr "Rostov-on-Don"
+
+msgid "Саратов"
+msgstr "Saratov"
+
+msgid "Сочи"
+msgstr "Sochi"
+
+msgid "Тверь"
+msgstr "Tver"
+
+msgid "Уфа"
+msgstr "Ufa"
+
+msgid "Алма-Аты"
+msgstr "Alma-Ata"
+
+msgid "Волгоград"
+msgstr "Volgograd"
+
+msgid "Казань"
+msgstr "Kazan"
+
+msgid "Калуга"
+msgstr "Kaluga"
+
+msgid "Кемерово"
+msgstr "Kemerovo"
+
+msgid "Киев"
+msgstr "Kiev"
+
+msgid "24 часа"
+msgstr "24 hours"
+
+msgid "кальян"
+msgstr "hookah"
+
+msgid "караоке"
+msgstr "karaoke"
+
+msgid "бизнес-ланчи"
+msgstr "business lunches"
+
+msgid "парковка"
+msgstr "parking"
+
+msgid "веранда"
+msgstr "veranda"
+
+msgid "события"
+msgstr "events"
+
+msgid "детские утренники"
+msgstr "children's matinees"
+
+msgid "танцпол"
+msgstr "dance floor"
+
+msgid "бар"
+msgstr "bar"
+
+msgid "казино"
+msgstr "casino"
+
+msgid "клуб"
+msgstr "club"
+
+msgid "ресторан"
+msgstr "restaurant"
+
+msgid "стриптиз клуб"
+msgstr "strip club"
+
+msgid "авторская"
+msgstr "author"
+
+msgid "европейская"
+msgstr "european"
+
+msgid "итальянская"
+msgstr "italian"
+
+msgid "кавказская"
+msgstr "caucasian"
+
+msgid "китайская"
+msgstr "chinese"
+
+msgid "паназиатская"
+msgstr "pan-asian"
+
+msgid "русская"
+msgstr "russian"
+
+msgid "французская"
+msgstr "french"
+
+msgid "фьюжн"
+msgstr "fusion"
+
+msgid "японская"
+msgstr "japanese"
+
+msgid "Библиотека имени Ленина"
+msgstr "Biblioteka imeni Lenina"
+
+msgid "Воробьёвы горы"
+msgstr "Vorobyovy gory"
+
+msgid "Комсомольская"
+msgstr "Komsomolskaya"
+
+msgid "Красносельская"
+msgstr "Krasnoselskaya"
+
+msgid "Красные ворота"
+msgstr "Krasnye vorota"
+
+msgid "Кропоткинская"
+msgstr "Kropotkinskaya"
+
+msgid "Лубянка"
+msgstr "Lubyanka"
+
+msgid "Охотный ряд"
+msgstr "Okhotnyy ryad"
+
+msgid "Парк культуры"
+msgstr "Park kultury"
+
+msgid "Преображенская площадь"
+msgstr "Preobrazhenskaya ploschad"
+
+msgid "Проспект Вернадского"
+msgstr "Prospekt Vernadskogo"
+
+msgid "Сокольники"
+msgstr "Sokolniki"
+
+msgid "Спортивная"
+msgstr "Sportivnaya"
+
+msgid "Улица Подбельского"
+msgstr "Ulitsa Podbelskogo"
+
+msgid "Университет"
+msgstr "Universitet"
+
+msgid "Фрунзенская"
+msgstr "Frunzenskaya"
+
+msgid "Черкизовская"
+msgstr "Cherkizovskaya"
+
+msgid "Чистые пруды"
+msgstr "Chistye prudy"
+
+msgid "Юго-Западная"
+msgstr "Yugo-Zapadnaya"
+
+msgid "Автозаводская"
+msgstr "Avtozavodskaya"
+
+msgid "Алма-Атинская"
+msgstr "Alma-Atinskaya"
+
+msgid "Аэропорт"
+msgstr "Aeroport"
+
+msgid "Белорусская"
+msgstr "Belorusskaya"
+
+msgid "Водный стадион"
+msgstr "Vodnyy stadion"
+
+msgid "Войковская"
+msgstr "Voykovskaya"
+
+msgid "Динамо"
+msgstr "Dinamo"
+
+msgid "Домодедовская"
+msgstr "Domodedovskaya"
+
+msgid "Кантемировская"
+msgstr "Kantemirovskaya"
+
+msgid "Каширская"
+msgstr "Kashirskaya"
+
+msgid "Коломенская"
+msgstr "Kolomenskaya"
+
+msgid "Красногвардейская"
+msgstr "Krasnogvardeyskaya"
+
+msgid "Маяковская"
+msgstr "Mayakovskaya"
+
+msgid "Новокузнецкая"
+msgstr "Novokuznetskaya"
+
+msgid "Орехово"
+msgstr "Orekhovo"
+
+msgid "Павелецкая"
+msgstr "Paveletskaya"
+
+msgid "Речной вокзал"
+msgstr "Rechnoy vokzal"
+
+msgid "Сокол"
+msgstr "Sokol"
+
+msgid "Тверская"
+msgstr "Tverskaya"
+
+msgid "Театральная"
+msgstr "Teatralnaya"
+
+msgid "Царицыно"
+msgstr "Tsaritsyno"
+
+msgid "Арбатская"
+msgstr "Arbatskaya"
+
+msgid "Бауманская"
+msgstr "Baumanskaya"
+
+msgid "Волоколамская"
+msgstr "Volokolamskaya"
+
+msgid "Измайловская"
+msgstr "Izmaylovskaya"
+
+msgid "Киевская"
+msgstr "Kievskaya"
+
+msgid "Крылатское"
+msgstr "Krylatskoe"
+
+msgid "Кунцевская"
+msgstr "Kuntsevskaya"
+
+msgid "Курская"
+msgstr "Kurskaya"
+
+msgid "Митино"
+msgstr "Mitino"
+
+msgid "Молодёжная"
+msgstr "Molodyozhnaya"
+
+msgid "Мякинино"
+msgstr "Myakinino"
+
+msgid "Парк Победы"
+msgstr "Park Pobedy"
+
+msgid "Партизанская"
+msgstr "Partizanskaya"
+
+msgid "Первомайская"
+msgstr "Pervomayskaya"
+
+msgid "Площадь Революции"
+msgstr "Ploschad Revolyutsii"
+
+msgid "Пятницкое шоссе"
+msgstr "Pyatnitskoe shosse"
+
+msgid "Семёновская"
+msgstr "Semyonovskaya"
+
+msgid "Славянский бульвар"
+msgstr "Slavyanskiy bulvar"
+
+msgid "Смоленская"
+msgstr "Smolenskaya"
+
+msgid "Строгино"
+msgstr "Strogino"
+
+msgid "Щёлковская"
+msgstr "Schyolkovskaya"
+
+msgid "Электрозаводская"
+msgstr "Elektrozavodskaya"
+
+msgid "Александровский сад"
+msgstr "Aleksandrovskiy sad"
+
+msgid "Багратионовская"
+msgstr "Bagrationovskaya"
+
+msgid "Выставочная"
+msgstr "Vystavochnaya"
+
+msgid "Кутузовская"
+msgstr "Kutuzovskaya"
+
+msgid "Международная"
+msgstr "Mezhdunarodnaya"
+
+msgid "Пионерская"
+msgstr "Pionerskaya"
+
+msgid "Студенческая"
+msgstr "Studencheskaya"
+
+msgid "Филевский парк"
+msgstr "Filevskiy park"
+
+msgid "Фили"
+msgstr "Fili"
+
+msgid "Добрынинская"
+msgstr "Dobryninskaya"
+
+msgid "Краснопресненская"
+msgstr "Krasnopresnenskaya"
+
+msgid "Новослободская"
+msgstr "Novoslobodskaya"
+
+msgid "Октябрьская"
+msgstr "Oktyabrskaya"
+
+msgid "Проспект Мира"
+msgstr "Prospekt Mira"
+
+msgid "Таганская"
+msgstr "Taganskaya"
+
+msgid "Академическая"
+msgstr "Akademicheskaya"
+
+msgid "Алексеевская"
+msgstr "Alekseevskaya"
+
+msgid "Бабушкинская"
+msgstr "Babushkinskaya"
+
+msgid "Беляево"
+msgstr "Belyaevo"
+
+msgid "Ботанический сад"
+msgstr "Botanicheskiy sad"
+
+msgid "ВДНХ"
+msgstr "VDNKh"
+
+msgid "Калужская"
+msgstr "Kaluzhskaya"
+
+msgid "Китай-город"
+msgstr "Kitay-gorod"
+
+msgid "Коньково"
+msgstr "Konkovo"
+
+msgid "Ленинский проспект"
+msgstr "Leninskiy prospekt"
+
+msgid "Медведково"
+msgstr "Medvedkovo"
+
+msgid "Новоясеневская"
+msgstr "Novoyasenevskaya"
+
+msgid "Новые Черёмушки"
+msgstr "Novye Cheryomushki"
+
+msgid "Профсоюзная"
+msgstr "Profsoyuznaya"
+
+msgid "Рижская"
+msgstr "Rizhskaya"
+
+msgid "Свиблово"
+msgstr "Sviblovo"
+
+msgid "Сухаревская"
+msgstr "Sukharevskaya"
+
+msgid "Тёплый стан"
+msgstr "Tyoplyy stan"
+
+msgid "Третьяковская"
+msgstr "Tretyakovskaya"
+
+msgid "Тургеневская"
+msgstr "Turgenevskaya"
+
+msgid "Шаболовская"
+msgstr "Shabolovskaya"
+
+msgid "Ясенево"
+msgstr "Яsenevo"
+
+msgid "Баррикадная"
+msgstr "Barrikadnaya"
+
+msgid "Беговая"
+msgstr "Begovaya"
+
+msgid "Волгоградский проспект"
+msgstr "Volgogradskiy prospekt"
+
+msgid "Выхино"
+msgstr "Vykhino"
+
+msgid "Жулебино"
+msgstr "Zhulebino"
+
+msgid "Кузнецкий мост"
+msgstr "Kuznetskiy most"
+
+msgid "Кузьминки"
+msgstr "Kuzminki"
+
+msgid "Октябрьское поле"
+msgstr "Oktyabrskoe pole"
+
+msgid "Планерная"
+msgstr "Planernaya"
+
+msgid "Полежаевская"
+msgstr "Polezhaevskaya"
+
+msgid "Пролетарская"
+msgstr "Proletarskaya"
+
+msgid "Пушкинская"
+msgstr "Pushkinskaya"
+
+msgid "Рязанский проспект"
+msgstr "Ryazanskiy prospekt"
+
+msgid "Сходненская"
+msgstr "Skhodnenskaya"
+
+msgid "Текстильщики"
+msgstr "Tekstilschiki"
+
+msgid "Тушинская"
+msgstr "Tushinskaya"
+
+msgid "Улица 1905 года"
+msgstr "Ulitsa 1905 goda"
+
+msgid "Щукинская"
+msgstr "Schukinskaya"
+
+msgid "Авиамоторная"
+msgstr "Aviamotornaya"
+
+msgid "Волхонка"
+msgstr "Volkhonka"
+
+msgid "Кутузовский проспект"
+msgstr "Kutuzovskiy prospekt"
+
+msgid "Марксистская"
+msgstr "Marksistskaya"
+
+msgid "Новогиреево"
+msgstr "Novogireevo"
+
+msgid "Новокосино"
+msgstr "Novokosino"
+
+msgid "Перово"
+msgstr "Perovo"
+
+msgid "Площадь Ильича"
+msgstr "Ploschad Ilicha"
+
+msgid "Плющиха"
+msgstr "Plyuschikha"
+
+msgid "Шоссе Энтузиастов"
+msgstr "Shosse Entuziastov"
+
+msgid "Алтуфьево"
+msgstr "Altufevo"
+
+msgid "Аннино"
+msgstr "Annino"
+
+msgid "Бибирево"
+msgstr "Bibirevo"
+
+msgid "Боровицкая"
+msgstr "Borovitskaya"
+
+msgid "Бульвар Дмитрия Донского"
+msgstr "Bulvar Dmitriya Donskogo"
+
+msgid "Владыкино"
+msgstr "Vladykino"
+
+msgid "Дмитровская"
+msgstr "Dmitrovskaya"
+
+msgid "Менделеевская"
+msgstr "Mendeleevskaya"
+
+msgid "Нагатинская"
+msgstr "Nagatinskaya"
+
+msgid "Нагорная"
+msgstr "Nagornaya"
+
+msgid "Нахимовский проспект"
+msgstr "Nakhimovskiy prospekt"
+
+msgid "Отрадное"
+msgstr "Otradnoe"
+
+msgid "Петровско-Разумовская"
+msgstr "Petrovsko-Razumovskaya"
+
+msgid "Полянка"
+msgstr "Polyanka"
+
+msgid "Пражская"
+msgstr "Prazhskaya"
+
+msgid "Савёловская"
+msgstr "Savyolovskaya"
+
+msgid "Севастопольская"
+msgstr "Sevastopolskaya"
+
+msgid "Серпуховская"
+msgstr "Serpukhovskaya"
+
+msgid "Тимирязевская"
+msgstr "Timiryazevskaya"
+
+msgid "Тульская"
+msgstr "Tulskaya"
+
+msgid "Улица академика Янгеля"
+msgstr "Ulitsa akademika Яngelya"
+
+msgid "Цветной бульвар"
+msgstr "Tsvetnoy bulvar"
+
+msgid "Чертановская"
+msgstr "Chertanovskaya"
+
+msgid "Чеховская"
+msgstr "Chekhovskaya"
+
+msgid "Южная"
+msgstr "Yuzhnaya"
+
+msgid "Борисово"
+msgstr "Borisovo"
+
+msgid "Братиславская"
+msgstr "Bratislavskaya"
+
+msgid "Волжская"
+msgstr "Volzhskaya"
+
+msgid "Достоевская"
+msgstr "Dostoevskaya"
+
+msgid "Дубровка"
+msgstr "Dubrovka"
+
+msgid "Зябликово"
+msgstr "Zyablikovo"
+
+msgid "Кожуховская"
+msgstr "Kozhukhovskaya"
+
+msgid "Крестьянская застава"
+msgstr "Krestyanskaya zastava"
+
+msgid "Люблино"
+msgstr "Lyublino"
+
+msgid "Марьина роща"
+msgstr "Marina roscha"
+
+msgid "Марьино"
+msgstr "Marino"
+
+msgid "Печатники"
+msgstr "Pechatniki"
+
+msgid "Римская"
+msgstr "Rimskaya"
+
+msgid "Сретенский бульвар"
+msgstr "Sretenskiy bulvar"
+
+msgid "Трубная"
+msgstr "Trubnaya"
+
+msgid "Чкаловская"
+msgstr "Chkalovskaya"
+
+msgid "Шипиловская"
+msgstr "Shipilovskaya"
+
+msgid "Варшавская"
+msgstr "Varshavskaya"
+
+msgid "Каховская"
+msgstr "Kakhovskaya"
+
+msgid "Битцевский парк"
+msgstr "Bittsevskiy park"
+
+msgid "Бульвар адмирала Ушакова"
+msgstr "Bulvar admirala Ushakova"
+
+msgid "Бунинская Аллея"
+msgstr "Buninskaya Alleya"
+
+msgid "Лесопарковая"
+msgstr "Lesoparkovaya"
+
+msgid "Улица Горчакова"
+msgstr "Ulitsa Gorchakova"
+
+msgid "Улица Скобелевская"
+msgstr "Ulitsa Skobelevskaya"
+
+msgid "Улица Старокачаловская"
+msgstr "Ulitsa Starokachalovskaya"
+
+msgid "категория"
+msgstr "category"
+
+msgid "пн"
+msgstr "mo"
+
+msgid "вт"
+msgstr "tu"
+
+msgid "ср"
+msgstr "we"
+
+msgid "чт"
+msgstr "th"
+
+msgid "пт"
+msgstr "fr"
+
+msgid "сб"
+msgstr "sa"
+
+msgid "вс"
+msgstr "su"
+
+msgid "Справочники"
+msgstr "References"
+
+msgid "Выход"
+msgstr "Logout"
+
+msgid "репортажи"
+msgstr "reports"
+
+msgid "Искать места, события, видео"
+msgstr "Search places, events, video"
+
+msgid "загрузить еще"
+msgstr "load more"
+
+msgid "ночная жизнь"
+msgstr "night life"
+
+msgid "последние добавленные"
+msgstr "recently added"
+
+msgid "рейтинговые"
+msgstr "rating"
+
+msgid "отчетов"
+msgstr "reports"
+
+msgid "анонсов"
+msgstr "posters"
+
+msgid "поделиться"
+msgstr "share"
+
+msgid "последние"
+msgstr "latest"
+
+msgid "популярные"
+msgstr "popular"
+
+msgid "вечеринки"
+msgstr "parties"
+
+msgid "выставки"
+msgstr "exhibitions"
+
+msgid "дети"
+msgstr "children"
+
+msgid "концерты"
+msgstr "concerts"
+
+msgid "мастер-классы"
+msgstr "workshops"
+
+msgid "театры"
+msgstr "theaters"
+
+msgid "вечеринка"
+msgstr "party"
+
+msgid "выставка"
+msgstr "exhibition"
+
+msgid "концерт"
+msgstr "concert"
+
+msgid "мастер-класс"
+msgstr "workshop"
+
+msgid "театр"
+msgstr "theater"
+
+msgid "по алфавиту"
+msgstr "by alphabetical"
+
+msgid "по рейтингу"
+msgstr "by rating"
+
+msgid "по среднему счету"
+msgstr "by average bill"
+
+msgid "мест"
+msgstr "places"
+
+msgid "параметры подбора"
+msgstr "filters"
+
+msgid "новые"
+msgstr "new"
+
+msgid "рекомендуемые"
+msgstr "recommended"
+
+msgid "Средний чек"
+msgstr "Average bill"
+
+msgid "Категории"
+msgstr "Categories"
+
+msgid "Метро"
+msgstr "Subway"
+
+msgid "Кухня"
+msgstr "Cuisine"
+
+msgid "Параметры"
+msgstr "Parameters"
+
+msgid "Применить"
+msgstr "Apply"
+
+msgid "еще"
+msgstr "more"
+
+msgid "все фоторепортажи"
+msgstr "all photos"
+
+msgid "все видео"
+msgstr "all videos"
+
+msgid "загрузить"
+msgstr "load"
+
+msgid "афиш"
+msgstr "posters"
+
+msgid "репортажей"
+msgstr "photoreports"
+
+msgid "ближайшие события"
+msgstr "coming events"
+
+msgid "Контактная информация"
+msgstr "Contact info"
+
+msgid "Соглашение о данных"
+msgstr "Agreement on data"
+
+msgid "Рекламные материалы"
+msgstr "Promotional materials"
+
+msgid "Реклама на сайте"
+msgstr "Promotional materials"
+
+msgid "Вакансии"
+msgstr "Vacancies"
+
+msgid "все"
+msgstr "all"
+
+msgid "рекомендуем"
+msgstr "recommended"
+
+msgid "популярное"
+msgstr "popular"
+
+msgid "новое"
+msgstr "new"
+
+msgid "Категория"
+msgstr "Category"
+
+msgid "Тип"
+msgstr "Type"
+
+msgid "Альбом недели"
+msgstr "Album of week"
+
+msgid "Сверхсобытие"
+msgstr "Super event"
+
+msgid "Ночная жизнь"
+msgstr "Night life"
+
+msgid "Светская хроника"
+msgstr "Gossip column"
+
+msgid "Приватная съемка"
+msgstr "Private shooting"
+
+msgid "Выездные мероприятия"
+msgstr "Outside events"
+
+msgid "Ничего не найдено."
+msgstr "Nothing was found."
+
+msgid "музыка"
+msgstr "music"
+
+msgid "В городе"
+msgstr "In the city"
+
+msgid "Частное"
+msgstr "Private"
+
+msgid "День за днем"
+msgstr "Day after day"
+
+msgid "светское"
+msgstr "gossip column"
+
+msgid "Светское"
+msgstr "Gossip column"
+
+msgid "Адреналин"
+msgstr "Adrenalin"
+
+msgid "В мире"
+msgstr "In the world"
+
+msgid "Нуар"
+msgstr "Noir"
+
+msgid "Вы уверены?"
+msgstr "Are you sure?"
+
+msgid "Скачать"
+msgstr "Download"
+
+msgid "Сводная таблица съёмок"
+msgstr "Summary of shooting"
+
+msgid "ТЗ"
+msgstr "TZ"
+
+msgid "Архив"
+msgstr "Archive"
+
+msgid "Кол. фото"
+msgstr "Count Photo"
+
+msgid "загружено"
+msgstr "Uploaded"
+
+msgid "Ш/Б"
+msgstr "F/P"
+
+msgid "Показать события без съемок"
+msgstr "Show events without shootingss"
+
+msgid "Добавить множественную"
+msgstr "Add multiple"
+
+msgid "Не удалось скачать архив"
+msgstr "Failed to download the file"
+
+msgid "Причина"
+msgstr "Cause"
+
+msgid "Продолжительность"
+msgstr "Duration"
+
+msgid "Количество фото от"
+msgstr "Number of photos"
+
+msgid "Количество фото до"
+msgstr "Number of photos to"
+
+msgid "Сбросить"
+msgstr "Reset"
+
+msgid "Выберите место"
+msgstr "Choose a place"
+
+msgid "Название события"
+msgstr "Event name"
+
+msgid "Выберите дату начала съемки"
+msgstr "Choose a date start shooting"
+
+msgid "Минимальное количество фото в съемке"
+msgstr "The minimum number of photos in shooting"
+
+msgid "Максимальное количество фото в съемке"
+msgstr "The maximum number of images in shooting"
+
+msgid "Хочу снимать"
+msgstr "I want to shoot"
+
+msgid "Награда фотографу"
+msgstr "Reward photographer"
+
+msgid "открыть"
+msgstr "open"
+
+msgid "Техническое задание на съемку"
+msgstr "Technical specifications for shooting"
+
+msgid "Коэффициент"
+msgstr "Coefficient"
+
+msgid "другие события"
+msgstr "other events"
+
+msgid "Сделать обложкой"
+msgstr "Set as cover"
+
+msgid "Добавить в слайдер"
+msgstr "Add to slider"
+
+msgid "Удалить"
+msgstr "Remove"
+
+msgid "Скрыть"
+msgstr "Hide"
+
+msgid "сортировать фотографии"
+msgstr "sort photos"
+
+msgid "убрать с главной"
+msgstr "remove from the main"
+
+msgid "Редактировать теги"
+msgstr "Edit tags"
+
+msgid "Актуальное"
+msgstr "Actual"
+
+msgid "Загрузка"
+msgstr "Loading"
+
+msgid "Отметить себя"
+msgstr "tag me"
+
+msgid "Снять отметку"
+msgstr "untag me"
+
+msgid "статей"
+msgstr "articles"
