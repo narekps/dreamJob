@@ -25,7 +25,6 @@ return [
     'Zend\Form',
     'Zend\Db',
     'Zend\Cache',
-    'ZendDeveloperTools',
     'Zend\Router',
     'Zend\Validator',
     
