@@ -39,5 +39,4 @@ return [
     'ZfbUserDoctrineORM',
     'ZfbRbac',
     'App',
-    'ZendDeveloperTools',
 ];
