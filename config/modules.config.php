@@ -11,6 +11,10 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
+    'Zend\I18n',
+    'Zend\InputFilter',
+    'Zend\Filter',
+    'Zend\Hydrator',
     'Zend\Paginator',
     'Zend\Navigation',
     'Zend\ServiceManager\Di',
@@ -27,8 +31,8 @@ return [
     'Zend\Cache',
     'Zend\Router',
     'Zend\Validator',
-    
-	'BsbFlysystem',
+
+    'BsbFlysystem',
     'DoctrineModule',
     'DoctrineORMModule',
     'ZfbUser',
